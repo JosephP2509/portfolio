@@ -1,0 +1,393 @@
+/*
+Student Name: Joseph Puerto
+File Name: styles.css
+Date: 09/11/2024
+*/
+
+/*
+CSS style rule reset
+*/
+
+body, header, nav, main, footer, footer a, img, h1, h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Default Style Rules for all Pages Mobile and Desktop
+*/
+
+.defaultfont {
+    font-family: "Bodoni Moda", serif;
+    font-style: normal;
+}
+body {
+    background-color: bisque;
+}
+main {
+    margin: 10px;
+}
+/*
+Nav Style Rules
+*/
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+.menu-icon img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.nav-bar {
+    width: 0;
+    height: 100vh;
+    background-color: #333;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+.nav-bar li {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    padding-right: 20%;
+    margin-bottom: 20%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu-container:hover .nav-bar {
+    width: 200px;
+}
+.menu-container:hover .menu-icon img {
+    transform: rotate(90deg);
+}
+.nav-bar a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.2s;
+}
+.nav-bar a:hover {
+    background-color: #575757;
+}
+.nav-bar i {
+    margin-right: 10px;
+}
+.nav-bar span {
+    display: inline;
+}
+.nav-bar li a::before {
+    content: "\1F5A5";
+    text-align: center;
+    padding: 30px;
+}
+
+/*
+Header Style Rules
+*/
+
+header {
+    position: relative;
+}
+
+#hbackground {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    position: -webkit-sticky;
+}
+
+
+#personallogo {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    float: right;
+    position: fixed;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*
+Home Page Style Rules
+*/
+
+.aboutme {
+    text-align: center;
+    font-size: 1.8em;
+}
+.description {
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 1.25em;
+}
+.email {
+    font-size: 1.3em; 
+    text-align: center;  
+}
+.email a {
+    text-decoration: underline;
+    color: black;
+}
+.phone {
+    font-size: 1.3em;
+    text-align: center;
+}
+.phone a {
+    text-decoration: underline;
+    color: black;
+}
+.home-page {
+    text-align: center;
+    font-size: 2.3em;
+}
+/*
+Style rules for contact page
+*/
+
+.contact-page {
+    text-align: center;
+    font-size: 2em;
+}
+.phone-number {
+    text-align: center;
+    font-size: 1em;
+}
+.phone-number a{
+    text-decoration: underline;
+    color: black;
+    font-size: 1em;
+}
+.reachme {
+    text-align: center;
+    font-size: 1.3em;
+}
+.generalcontact {
+    text-align: center;
+    font-size: 1.3em;
+}
+.gmail {
+    text-align: center;
+    font-size: 1em;
+}
+.gmail a {
+    text-decoration: underline;
+    color: black;
+    font-size: 1em;
+}
+.ifyouneedme {
+    text-align: center;
+    font-size: 1.3em;
+}
+.findme {
+    text-align: center;
+    font-size: 1em;
+}
+.findme a {
+    text-decoration: underline;
+    color: black;
+    font-size: 1em;    
+}
+.map iframe {
+    width: 90%;
+    margin: auto;
+    border-radius: 2%;
+}
+.map {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*
+Animation Page Style Rules
+*/
+.animations-page{
+    font-size: 2em;
+    text-align: center;
+}
+.wick-editor {
+    text-align: center;
+    font-size: 1.3em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/*
+Audio Style Rules
+*/
+
+.AudioPage {
+    font-size: 2em;
+    text-align: center;
+}
+.music {
+    text-align: center;
+}
+.musicname {
+    text-align: center;
+    font-size: 1.8em;
+}
+.musicdesc {
+    text-align: center;
+    font-size: 1.3em;
+    margin-left: 5%;
+    margin-left: 5%;
+}
+/*
+Graphics Style Rules
+*/
+
+.GraphicsPage {
+    text-align: center;
+    font-size: 2em;
+}
+.board {
+    text-align: center;
+    overflow-x: hidden;
+}
+.boardtitle {
+    text-align: center;
+    font-size: 1.8em;
+}
+.boarddesc {
+    text-align: center;
+    font-size: 1.4em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/*
+App Development Style Rules
+*/
+.appdev {
+    text-align: center;
+    font-size: ff2em;
+}
+.prototypevid {
+    text-align: center;
+}
+.prototype {
+    text-align: center;
+    font-size: 1.3em;
+}
+.plink {
+    text-decoration: none;
+    color: black;
+}
+.prototypedesc {
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*
+Footer Style Rules
+*/
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: underline;
+}
+/* 
+Media Querys
+*/
+
+@media screen and (min-width: 1020px) {
+    /*
+    Style Rules for Animation Desktop
+    */
+    .interactivestory {
+        text-align: center;
+        max-width: 100%;
+        overflow-x: hidden;
+    }  
+    .mobile {
+        display: none;
+    }
+    /*
+    Style Rules for Index Desktop
+    */
+    .resume {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .document {
+        text-align: center;
+        border-radius: 5%;
+        overflow-x: hidden;
+    }
+    .document iframe {
+        width: 8in; 
+        height: 11.2in;
+        text-align: center;
+        max-width: 50%;
+        border-radius: 2%;
+        border-color: gray;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 1020px) {
+    /*
+    Style Rules for Animation Mobile
+    */
+    .interactivestory {
+        display: none;
+    }
+    .story-cover {
+        text-align: center;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    /*
+    Style Rules for Index Mobile
+    */
+    .resume {
+        display: none;
+    }
+    .document {
+        display: none;
+    }
+    .document iframe {
+        display: none;
+    }
+    .resume-mobile button {
+        background-color: transparent;
+        width: 150px;
+        height: 50px;
+    }
+    .resume-mobile {
+    text-align: center;
+    }
+    .resume-mobile a{
+    color: black;
+    text-decoration: underline;
+    font-size: 1.3em;
+    }
+    .mobile-board {
+    text-align: center;
+    overflow-x: hidden;
+    }
+    .board {
+        display: none;
+    }
+}
